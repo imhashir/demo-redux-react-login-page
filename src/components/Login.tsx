@@ -49,7 +49,6 @@ const Login = (props: LoginProps) => {
             Login
           </Typography>
           <TextField
-            variant="outlined"
             margin="normal"
             fullWidth
             id="email"
@@ -58,7 +57,6 @@ const Login = (props: LoginProps) => {
             onChange={handleEmailChange}
           />
           <TextField
-            variant="outlined"
             margin="normal"
             fullWidth
             name="password"
@@ -74,7 +72,6 @@ const Login = (props: LoginProps) => {
           )}
           <Button
             type="button"
-            fullWidth
             variant="outlined"
             className={classes.submit}
             onClick={handleSubmit}
@@ -98,7 +95,7 @@ function mapStateToProps(state: { auth: LoginProps }) {
 export default withStyles({
   "@global": {
     body: {
-      backgroundColor: "#fff"
+      backgroundColor: "#fff8e4"
     }
   },
   paper: {
@@ -106,7 +103,7 @@ export default withStyles({
     display: "flex",
     padding: 20,
     flexDirection: "column",
-    alignItems: "center"
+    alignItems: "flex-start"
   },
   avatar: {
     marginLeft: "auto",
