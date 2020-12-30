@@ -45,11 +45,8 @@ const Login = (props: LoginProps) => {
     return (
       <Container component="main" maxWidth="xs">
         <Paper className={classes.paper}>
-          <Avatar className={classes.avatar}>
-            <LockOutlinedIcon />
-          </Avatar>
           <Typography component="h1" variant="h5">
-            Sign in
+            Login
           </Typography>
           <TextField
             variant="outlined"
@@ -78,8 +75,7 @@ const Login = (props: LoginProps) => {
           <Button
             type="button"
             fullWidth
-            variant="contained"
-            color="primary"
+            variant="outlined"
             className={classes.submit}
             onClick={handleSubmit}
           >
